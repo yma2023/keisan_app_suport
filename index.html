@@ -30,12 +30,14 @@
             border-radius: 8px;
             box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
         }
-        .promo-image {
-            text-align: center;
+        .promo-images {
+            display: flex;
+            justify-content: space-between;
+            gap: 10px;
             margin-bottom: 20px;
         }
-        .promo-image img {
-            max-width: 100%;
+        .promo-images img {
+            max-width: calc(33.333% - 10px);
             height: auto;
             border-radius: 8px;
         }
@@ -70,28 +72,26 @@
     </header>
 
     <div class="content">
-        <!-- Image 1 -->
-        <div class="promo-image">
-            <img src="image1.jpg" alt="広告なしで快適な計算">
+        <!-- Images Row -->
+        <div class="promo-images">
+            <img src="image1.png" alt="広告なしで快適な計算">
+            <img src="image2.png" alt="シンプルな操作性">
+            <img src="image3.png" alt="計算結果の保存">
         </div>
+
+        <!-- Feature 1 -->
         <div class="feature">
             <h2>広告なしで、計算に集中！</h2>
             <p>煩わしい広告が一切なく、スムーズな操作を提供します。ストレスフリーな計算体験をお楽しみください。</p>
         </div>
 
-        <!-- Image 2 -->
-        <div class="promo-image">
-            <img src="image2.jpg" alt="シンプルな操作性">
-        </div>
+        <!-- Feature 2 -->
         <div class="feature">
             <h2>ワンタップで簡単計算！</h2>
             <p>初心者でも安心して使えるシンプルな操作性。必要な項目を入力するだけで自動計算します。</p>
         </div>
 
-        <!-- Image 3 -->
-        <div class="promo-image">
-            <img src="image3.jpg" alt="計算結果の保存">
-        </div>
+        <!-- Feature 3 -->
         <div class="feature">
             <h2>計算結果をリストで管理！</h2>
             <p>計算した結果を保存して、後から簡単に確認・管理できます。ビジネスや日常の記録に役立ちます。</p>
@@ -100,7 +100,7 @@
 
     <footer>
         <p>今すぐアプリをダウンロードして、計算をもっと快適に！</p>
-        <p><a href="#">アプリストアはこちら</a></p>
+        <p><a href="https://apps.apple.com/cn/developer/yokoyama-kojun/id1768680544">アプリストアはこちら</a></p>
     </footer>
 </body>
 </html>
